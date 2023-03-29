@@ -1,0 +1,53 @@
+.brick-layout 
+{
+    width: 400px;
+    padding: 5px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.brick 
+{
+    min-height: 80px;
+    min-width: 50px;
+    display: flex;
+    margin: 10px;
+    flex-basis: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.color-aqua 
+{
+    background-color: aqua;
+}
+
+.color-aqua:nth-child(2)
+{
+    flex-grow: 1;
+}
+
+.color-yellow 
+{
+    background-color: yellow;
+}
+
+.color-yellow:nth-child(4),
+.color-yellow:nth-child(6)
+{
+    flex-grow: 1;
+}
+
+.color-fuchsia 
+{
+    background-color: fuchsia;
+}
+
+.color-fuchsia:nth-child(8)
+{
+    flex-grow: 1;
+}
